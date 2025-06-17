@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" media="screen" href="style.css">
+<script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+  <h1 class="heading">Sorting Visualizer</h1>
+  <div class="container">
+    <div class="sidebar">
+      <select name=""id="selectAlgorithm" class="select-algorithm">
+        <option value="1">Bubble Sort</option>
+        <option value="2">Selection Sort</option>
+        <option value="3">Insertion Sort</option>
+        <option value="4">Quick Sort</option>
+        <option value="5">Merge Sort</option>
+      </select>
+      <div class="generate-new">
+        <p><b>Generate New Array</b></p>
+        <input type="number" name="sizeArray" id="numbersBars" max="15" min="0" value="30">
+        <button id="generateBtn">New</button>
+      </div>
+      <div class="buttons">
+        <button id="solveBtn">Solve</button>
+      </div>
+    </div>
+    <div class="stage" id="stage"></div>
+  </div>
+</body>
+
+</html>
